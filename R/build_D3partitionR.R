@@ -311,6 +311,8 @@ compile_D3_partitionR<-function(D3partitionR_object)
   ###Color scale####
 
   ##If no color variable have been provided, default to name
+  
+  print(d3$color)
 
   ##if no color scale have been supplied
   if (is.null(d3$color))
