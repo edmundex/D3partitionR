@@ -193,7 +193,7 @@ function plot_d3partitionR(el,D3partitionR)
         
 
 				chart.selectAll(".d3_partition_node")
-				  	.style("stroke", 'black')
+				  	.style("stroke", 'white')
 					  .style("stroke-width", 2)
 					.on("click", function(d) {
 
@@ -252,7 +252,7 @@ function plot_d3partitionR(el,D3partitionR)
 
 					  )
         .on('mouseout', function () {
-          d3.select(this).classed('hovered_node_'+el_id, false).style("stroke", 'black');
+          d3.select(this).classed('hovered_node_'+el_id, false).style("stroke", 'white');
           setTimeout(function(){
     d3.select( '#tooltip_'+el_id).classed('hidden', true);
 }, 1000);
